@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@next/env': ^13.1.4
   '@next/font': 13.1.4
   '@types/node': 18.11.18
   '@types/react': 18.0.27
@@ -10,6 +11,7 @@ specifiers:
   eslint-config-next: 13.1.4
   next: 13.1.4
   next-seo: ^5.15.0
+  next-sitemap: ^3.1.47
   postcss: ^8.4.21
   prettier: ^2.8.3
   react: 18.2.0
@@ -19,6 +21,7 @@ specifiers:
   typescript: 4.9.4
 
 dependencies:
+  '@next/env': 13.1.4
   '@next/font': 13.1.4
   '@types/node': 18.11.18
   '@types/react': 18.0.27
@@ -27,6 +30,7 @@ dependencies:
   eslint-config-next: 13.1.4_7uibuqfxkfaozanbtbziikiqje
   next: 13.1.4_3duxcpitbtplz62feflag7fwby
   next-seo: 5.15.0_gru2niblrprbai56sdagiiy5sa
+  next-sitemap: 3.1.47_k3xubi4cl6g3c4l3yo34j5mc5y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   typescript: 4.9.4
@@ -45,6 +49,10 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
+    dev: false
+
+  /@corex/deepmerge/4.0.37:
+    resolution: {integrity: sha512-PX90bEnrLdxd5e6rSFWsghExMuSw0Uov3fWJuuaoFuUQIS/446diu/4seExK5b+43L+SOBbd2uBGwYUkG1JfCw==}
     dev: false
 
   /@eslint/eslintrc/1.4.1:
@@ -1704,6 +1712,20 @@ packages:
       next: 13.1.4_3duxcpitbtplz62feflag7fwby
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /next-sitemap/3.1.47_k3xubi4cl6g3c4l3yo34j5mc5y:
+    resolution: {integrity: sha512-LZxCWZ6lhQBfv1cuGob3tnsaHWffQM7VDmkXXp8u3n4LD7EJAR/SamlMj3mpHa8bFeuR6TjjRqrq/7e4WSOcLQ==}
+    engines: {node: '>=14.18'}
+    hasBin: true
+    peerDependencies:
+      '@next/env': '*'
+      next: '*'
+    dependencies:
+      '@corex/deepmerge': 4.0.37
+      '@next/env': 13.1.4
+      minimist: 1.2.7
+      next: 13.1.4_3duxcpitbtplz62feflag7fwby
     dev: false
 
   /next/13.1.4_3duxcpitbtplz62feflag7fwby:
