@@ -14,6 +14,7 @@ export const Analytics = () => {
           gtag('js', new Date());
           gtag('config', '${GOOGLE_ANALYTICS_KEY}', {
             page_path: window.location.pathname,
+            anonymize_ip: true
           });
         `}
       </Script>
