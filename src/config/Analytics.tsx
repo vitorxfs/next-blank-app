@@ -7,7 +7,7 @@ export const Analytics = () => {
     <>
       <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_KEY}`} />
 
-      <Script strategy="lazyOnload">
+      <Script id="google-analytics-script" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
