@@ -8,7 +8,7 @@ const defaultData = {
   url: WEBSITE_URL,
   images: [
     {
-      url: 'og.png',
+      url: '/og.png',
       alt: 'Og Image Alt',
       type: 'image/png',
     }
@@ -17,6 +17,7 @@ const defaultData = {
 };
 
 const metadata: Metadata = {
+  metadataBase: new URL(defaultData.url),
   title: defaultData.title,
   description: defaultData.description,
   abstract: 'abstract',

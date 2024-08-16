@@ -1,10 +1,13 @@
 import { Inter } from 'next/font/google'
 import { Metadata } from 'next';
 
+import defaultMetadata from './metadata';
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Index Page',
+  ...defaultMetadata,
 }
 
 export default function Home() {
