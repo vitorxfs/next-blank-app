@@ -3,7 +3,7 @@ import NextLink, { LinkProps as NextLinkProps } from 'next/link';
 
 type AnchorProps = Omit<
   React.AnchorHTMLAttributes<HTMLAnchorElement>,
-  'target' | 'href'
+  'target'
 >;
 
 interface LinkProps extends NextLinkProps {
@@ -18,7 +18,7 @@ const Link: React.FC<LinkProps> = ({
 }) => {
   return (
     <NextLink target={external ? '_blank' : undefined} {...anchorProps} >
-        {children}
+      {children}
     </NextLink>
   );
 };
